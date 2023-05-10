@@ -8,9 +8,9 @@
     --text-sun-normal: #121212;
     --text-sun-light: #888888;
     
-    --hue-color: 30;
-    --skin-color: hsl(var(--hue-color), 100%, 50%);
-    --skin-color-light: hsl(var(--hue-color), 100%, 70%)
+    --hue-color: 220;
+    --skin-color: hsl(var(--hue-color), 50%, 50%);
+    --skin-color-light: hsl(var(--hue-color), 50%, 70%)
 }
 
 * {
@@ -43,6 +43,9 @@ ul {
     display: block;
     opacity: 1;
 }
+.hidden{
+    display: none !important;
+}
 main{
     padding-left: 270px;
 }
@@ -56,7 +59,42 @@ main{
     max-width: 1100px;
     width: 100%;
     margin: auto;
+}
 
+.section .container {
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+.section-title {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 60px;
+}
+.section-title h2 {
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--text-sun-normal);
+    position: relative;
+}
+.section-title h2::before {
+    content: ' ';
+    height: 4px;
+    width: 50px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.section-title h2::after {
+    content: ' ';
+    height: 4px;
+    width: 25px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
 }
 
 .row {
@@ -183,27 +221,27 @@ aside nav ul li a.active{
     color: var(--text-sun-normal);
 }
 .home .home-info{
-    flex: 0 0 60%;
-    max-width: 60%;
+    flex: 0 0 65%;
+    max-width: 65%;
 }
 .home .home-info h3.hello{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 15px 0;
+    font-size: 40px;
+    font-weight: 900;
+    margin: 20px 0;
 }
 .home .home-info h3.hello span{
-    font-size: 28px;
+    font-size: 40px;
     font-weight: 900;
     color: var(--skin-color);
 }
 .home .home-info h3.my-profession{
     font-size: 25px;
     font-weight: 500;
-    margin: 15px 0;
+    margin: 20px 0;
 }
 .home .home-info h3.my-profession span{
-    font-size: 28px;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 700;
     color: var(--skin-color);
 }
 .home .home-info p{
@@ -212,24 +250,25 @@ aside nav ul li a.active{
 }
 
 .home .home-info .social-media{
-    margin-top: 15px;
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: end;
 }
 .home .home-info .social-media .social-icon{
-    font-size: 30px;
-    color: var(--text-sun-light);
+    font-size: 50px;
+    color: var(--skin-color);
     margin: 0 5px;
     transition: all .5s ease;
 }
 .home .home-info .social-media .social-icon:hover{
-    color: var(--skin-color);
+    color: var(--text-sun-normal);
+    transform: scale(1.2);
 }
 
 .home .home-img{
-    flex: 0 0 40%;
-    max-width: 40%;
+    flex: 0 0 35%;
+    max-width: 35%;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -238,5 +277,12 @@ aside nav ul li a.active{
 
 .home .home-img img{
     width: 90%;
+    border-radius: 30px; 
 }
 
+ /* About */
+.about .about-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+    background-color: red;
+}
