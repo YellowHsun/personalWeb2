@@ -9,29 +9,32 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>HKH Personal Web</title>
 </head>
-<body>
+<body class="dark">
     <div class="main-container">
         <!-- div.aside -->
-        <aside>
+        <aside id="nav-menu">
             <div class="logo">
                 <a href="#">HKH</a>
             </div>
-            <div class="nav-toggler">
-                <span></span>
-            </div>
             <nav>
                 <ul>
-                    <li><a href="#" class="active"><i class="uil uil-estate"></i> Home</a></li>
-                    <li><a href="#"><i class="uil uil-user-square"></i> About</a></li>
-                    <li><a href="#"><i class="uil uil-scenery"></i> Portfolio</a></li>
-                    <li><a href="#"><i class="uil uil-envelope-edit"></i> Contact</a></li>
+                    <li><a class="nav-link" href="#home"><i class="uil uil-estate"></i> Home</a></li>
+                    <li><a class="nav-link" href="#about"><i class="uil uil-user-square"></i> About</a></li>
+                    <li><a class="nav-link" href="#portfolio"><i class="uil uil-scenery"></i> Portfolio</a></li>
+                    <li><a class="nav-link" href="#contact"><i class="uil uil-envelope-edit"></i> Contact</a></li>
                 </ul>
             </nav>
+            <div class="nav-close">
+                <i class="uil uil-times-circle"></i>
+            </div>
         </aside>
+        <div class="nav-toggler">
+            <span></span>
+        </div>
         <!-- div.main-content -->
         <main>
             <!-- Home -->
-            <section class="home section">
+            <section class="home section" id="home">
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
@@ -57,7 +60,7 @@
                 </div> 
             </section>
             <!-- About -->
-            <section class="about section">
+            <section class="about section" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -200,7 +203,7 @@
                 </div>
             </section>
             <!-- Portfolio -->
-            <section class="portfolio section">
+            <section class="portfolio section" id="portfolio">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -251,7 +254,7 @@
                 </div>
             </section>
             <!-- Contact -->
-            <section class="contact section">
+            <section class="contact section" id="contact">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -275,6 +278,9 @@
                 </div>
             </section>
         </main>
+    </div>
+    <div class="day-night s-icon">
+        <i class="uil"></i>
     </div>
     <script src="./main.js"></script>
 </body>
