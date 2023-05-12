@@ -482,9 +482,17 @@ font-weight: 400px;
     color: var(--text-sun-normal);
 }
 
-.about .about-content .timeline .timeline-text {
+.about .about-content .timeline .timeline-ability {
     line-height: 25px;
     font-size: 18px;
+    text-align: justify;
+    margin-bottom: 8px;
+    color: var(--skin-color-light);
+}
+
+.about .about-content .timeline .timeline-text {
+    line-height: 25px;
+    font-size: 16px;
     text-align: justify;
     color: var(--text-sun-normal);
 }
