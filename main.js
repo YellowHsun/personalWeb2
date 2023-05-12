@@ -44,4 +44,24 @@ if(navClose){
 navLink.forEach(n => n.addEventListener('click', closeMenu));
 
 
-//
+//Scroll section active link
+
+const sections = document.querySelectorAll('section[id]');
+
+function scrollActive(){
+    const scrollY = window.pageYOffset;
+
+    sections.forEach(current => {
+        let sectionHeight = current.offsetHeight;
+        let sectionTop = current.offsetTop - 50;
+        let sectionId = current.getAttribute('id');
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            document.querySelector('#nav-' + sectionId).classList.add('active-link')
+        }else{
+            document.querySelector('#nav-' + sectionId).classList.remove('active-link')
+        }
+    })
+}
+
+window.addEventListener('scroll', scrollActive);

@@ -209,7 +209,7 @@ aside nav ul li a i{
     margin-left: 15px;
 }
 
-aside nav ul li a.active{
+.active-link{
     color: var(--skin-color);
     border-color: var(--skin-color);
 }
