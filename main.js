@@ -23,7 +23,7 @@ window.addEventListener("load", () => {
 // menu show
 
 const navToggle = document.querySelector(".nav-toggler");
-const navMenu = document.getElementById("nav-menu");
+const navMenu = document.querySelector(".nav-menu");
 const navClose = document.querySelector(".nav-close");
 const navLink = document.querySelectorAll(".nav-link")
 
@@ -42,3 +42,6 @@ if(navClose){
 }
 
 navLink.forEach(n => n.addEventListener('click', closeMenu));
+
+
+//

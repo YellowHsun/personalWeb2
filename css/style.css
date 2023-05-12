@@ -26,6 +26,8 @@ body {
     line-height: 1.5;
     font-size: 16px;
     font-family: 'Poppins 2', 'Noto Sans TC', sans-serif;
+    
+    background-color: var(--bg-sun-alt);
 }
 
 body.dark {
@@ -238,6 +240,7 @@ aside .nav-close:hover {
     justify-content: center;
     align-items: center;
     transition: all .5s ease;
+    z-index: 5;
 }
 
 .nav-toggler:hover{
